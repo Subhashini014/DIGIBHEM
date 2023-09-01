@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <h1>Hotel Booking Registration Form</h1>
+    <style>
+        body {
+            background: url("greenary.jpg");
+            background-size: cover;
+            text-align:left;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+    <form id="booking-form">
+       <h1 style="font-family:roboto;font-size:40px;color:brown;height:20px">Registration</h1>
+       <h1 style="font-family:roboto;font-size:20px;text-align:left;color:brown;height:20px;">Customer  Details</h1>
+       
+        <label for="customer-name">First Name:</label>
+        <input type="text" id="customerF-name" placeholder="Enter name" required>
+
+        <label for="customer-name">Last Name:</label>
+        <input type="text" id="customerL-name" placeholder="Enter name" required>
+        
+        <label for="customer-email">Email id:</label>
+        <input type="text" id="customer-email" placeholder="Enter email-id" required>
+
+        <label for="customer-number">Phone Number:</label>
+        <input type="number" id="customer-number" placeholder="Enter Phone Number" required>
+
+        <label for="check-in-date">Check-in-Date:</label>
+        <input type="date" id="check-in-date" placeholder="Enter check-in-date" required>
+
+        <label for="tdays">Total No of Days:</label>
+        <input type="number" id="tdays" placeholder="Enter days" required>
+
+        <label for="totper">Total No of Persons:</label>
+        <input type="number" id="totper" placeholder="Enter total no of persons" required>
+
+        <h1 style="font-family:roboto;font-size:20px;text-align:left;color:brown;height:20px;">Room Information</h1>
+        <label for="roomtype" id="Roomtype">Room Type:</label>
+        <select id="roomtype" style="font-family:roboto;font-size:17px;height:18px;padding:5px;display:block;box-sizing:content-box;">
+            <option value="0">select</option>
+            <option value="2500">Deluxe Room(2500/-)</option>
+            <option value="4000">Suite Room(4000/-)</option>
+        </select>
+
+        <label for="Ameniti">Amenities:</label>
+        <select id="Ameniti" style="font-family:roboto;font-size:17px;height:18px;padding:5px;display:block;box-sizing:content-box;">
+            <option value="0">select</option>
+            <option value="1000">AC(1000/-)</option>
+            <option value="300">Locker(300/-)</option>
+            <option value="1300">Locker(1300/-)</option>
+        </select>
+
+        <label for="adamount">Advance Amount:</label>
+        <input type="text" id="adamount" name="advanceAmount" required>
+
+        <button type="button" style="margin-left:80px;margin-right:100px;margin-top:20px;margin-bottom:20px;width:300px;" id="calculateBtn" onclick="updateResults()">Calculate</button>
+        
+        <h1 style="font-family:roboto;font-size:20px;text-align:left;color:brown;height:20px;">Room Payment Information</h1>
+        <label for="totrcost">Total Room Cost:</label>
+        <input type="number" id="totrcost" name="totalCost" readonly>
+         
+        <label for="Aminitiescost">Aminities Amount:</label>
+        <input type="number" id="Aminitiescost" name="AminitiAmount" readonly>
+         
+        <label for="Additcost">Additional Amount:</label>
+        <h1 style="font-family:roboto;font-size:20px;text-align:left;color:brown;margin:5px">/**Upto 2 peope:No change in cost</h1>
+        <h1 style="font-family:roboto;font-size:20px;text-align:left;color:brown;margin:5px">Per day cost for extra person:1000/- **/</h1>
+        <input type="number" id="Additcost" name="AminitiAmount" readonly>
+
+        <label for="totcost">Total Amount:</label>
+        <input type="number" id="totcost" name="TotalCost" readonly>
+        
+        <label for="blsAmt">Balance Amount:</label>
+        <input type="number" id="blsAmt" name="balanceAmount" readonly>
+
+        <button type="button" style="margin-left:80px;margin-right:100px;margin-top:20px;margin-bottom:20px;width:300px;" id="submit">Register</button>
+        <h1 style="font-family: roboto;color:rgb(84, 197, 203)">Thank you for registeration and happy stay</h1>
+    </form>
+
+</body>
+</html>

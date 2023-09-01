@@ -1,0 +1,73 @@
+
+         body {
+            background-image: url("greenary.jpg");
+            background-size: cover;
+            color:black;
+            margin: auto;
+            padding: 2px;
+            font-family:roboto;
+        }
+        h1 {
+            text-align: center;
+            padding: 10px;
+            color: black;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+            #booking-form{
+            text-align:left;
+            justify-content: center;
+            align-content: center;
+            background-size: cover;
+            background-color: hsla(190, 10%, 65%, 0.5);
+            color: black;
+            padding: 50px;
+            margin: 50px auto;
+            width: 30%;
+            height:1600px;
+        }
+        label{
+            width:100%;
+            padding:5px;
+            margin:5px;
+        }
+          input{
+            width: 100%;
+            padding: 5px;
+            margin: 5px;
+            margin-top:10px;
+            margin-bottom:10px;
+            box-sizing: content-box;
+        }
+        label{
+            width:20px;
+            margin-left: 15px;
+            height:15px;
+            border-radius: 15px;
+            margin-top:20px;
+            margin-bottom: 20px;
+        }
+        select {
+            width:455px;
+            height:7px;
+            padding:8px;
+            display:block;
+            box-sizing:content-box;
+            margin:5px;
+            margin-top: 10px;
+            margin-bottom:10px;
+
+        }
+        button{
+            background-color: brown;
+            color:black;
+            width: 50%;
+            padding: 5px;
+            box-sizing: content-box;
+            margin:5px;
+            margin-top: 10px;
+            margin-bottom:10px;
+        }
+        display{
+            display:inline;
+        }
+    
